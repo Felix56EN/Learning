@@ -8,7 +8,6 @@ class Animal:
         print(Animal.count)
     inst_count = staticmethod(inst_count)
 
-
 class Dog(Animal):
     def voice(self):
         return "Гав!"
@@ -21,7 +20,6 @@ class Cow(Animal):
     def voice(self):
         return "Муууу!"
 
-
 polkan = Dog()
 murka = Cat()
 burenka = Cow()
@@ -29,4 +27,5 @@ burenka = Cow()
 print("Собака Полкан говорит:", polkan.voice())
 print("Кошка Мурка говорит:", murka.voice())
 print("Корова Буренка говорит:", burenka.voice())
+
 Animal.inst_count()
